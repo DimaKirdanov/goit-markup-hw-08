@@ -8,24 +8,41 @@
       display: none;
     }
 }
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.mobile-menu-open {
+  background-color:transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+
 
 //   background-color: var(--background-header);
 //   padding-top: 24px;
 //   padding-bottom: 25px;
 //   border-bottom: 1px solid #eeeeee;
 // }
-// .header-logo {
-//   color: #000000;
-//   font-family: "Raleway", sans-serif;
-//   font-style: normal;
-//   @include font(26px, 700, 31px);
-//   text-decoration: none;
-//   margin-right: 93px;
-// }
+.header-logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  @include font(26px, 700, 31px);
+  text-decoration: none;
+  margin-right: 93px;
+}
 
-// .header-logo-sub {
-//   color: #2196f3;
-// }
+.header-logo-sub {
+  color: #2196f3;
+}
 // .header-nav {
 //   display: flex;
 //   align-items: center;

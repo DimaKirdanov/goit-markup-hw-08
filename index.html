@@ -45,7 +45,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open" data-menu-open>
           <svg class="mobile-menu-open__icon" width="40px" height="40px">
             <use href="./images/SVG/symbol-defs.svg#burger-menu"></use>
           </svg>
@@ -58,23 +58,42 @@
               href="mailto:info@devstudio.com"
             >
               <svg class="mail-svg" width="16" height="12">
-                <use href="./images/SVG/symbol-defs.svg#envelope"></use></svg
-              >info@devstudio.com</a
+                <use href="./images/SVG/symbol-defs.svg#envelope"></use></svg>info@devstudio.com</a
             >
           </li>
           <li class="contact-list__tell-link">
             <a class="contact-list__link-header link" href="tel:+380961111111">
               <svg class="tell-svg" width="10" height="16">
-                <use href="./images/SVG/symbol-defs.svg#smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
+                <use href="./images/SVG/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="conteiner mobile-menu__conteiner">
+ <button class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/SVG/symbol-defs.svg#close-modal"></use>
+          </svg>
+        </button>
+        <ul class="nav">
+          <li>
+            <a href="">Студия</a>
+          </li>
+          <li>
+              <a class="" href="./portfolio.html"
+                >Портфолио</a>
+          </li>
+          <li>
+             <a href="">Контакты</a>
+          </li>
+        </ul>
+        </div>
+       
       </div>
     </header>
 
     <!-- уникальный контент -->
-    <main>
+    <!-- <main> -->
       <!-- HERO -->
       <!-- <section class="section hero">
         <div class="conteiner">
@@ -604,6 +623,8 @@ autocomplete="off" placeholder="E-mail">
       </div>
     </div> -->
     <!-- /MODAL -->
+   
     <!-- <script src="./js/modal.js"></script> -->
-  </body>
-</html>
+     <script src="./js/mobile-menu.js"></script>
+  <!-- </body>
+</html> -->
