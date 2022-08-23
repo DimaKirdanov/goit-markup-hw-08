@@ -31,8 +31,6 @@
         line-height: 0;
         
     }
-      
-
     .mobile-menu__conteiner {
         position: relative;
         padding-left: 25px;
@@ -40,4 +38,19 @@
         padding-bottom: 48px;
 
     }
+          .mobile-menu-open {
+              background-color: transparent;
+              border: none;
+              padding: 0;
+              line-height: 0;
+          }
+    
+          .mobile-menu-open__icon {
+              fill: var(--tittle-text-color);
+              transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+              &:hover {
+                  fill: #2196f3;
+              }
+          }
 }
