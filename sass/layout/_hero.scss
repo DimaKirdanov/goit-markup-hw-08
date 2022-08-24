@@ -8,13 +8,23 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/header_mob_img.jpg);
+      url(../images/hero-bg-mob.jpg);
     background-color: var(--hero-bg-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
   }
+    @media screen and (min-device-pixel-ratio:2) and (max-width: 767px),
+        screen and (min-resolution: 192dpi) and (max-width: 767px),
+        screen and (min-resolution: 2dppx) and (max-width: 767px){
+          .hero{
+            background-image: linear-gradient(to right,
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)),
+                url(../images/hero-bg-mob-2x.jpg);
+          }
+        }
 
      .hero-tittle {
     max-width: 360px;
@@ -63,7 +73,7 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../images/hero_bg_tablet.jpg);
+      url(../images/hero-bg-tablet.jpg);
     background-color: var(--hero-bg-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +83,16 @@
     max-width: 1600px;
     height: 400px;
   }
-
+ @media screen and (min-device-pixel-ratio:2) and (min-width: 768px),
+ screen and (min-resolution: 192dpi) and (min-width: 768px),
+ screen and (min-resolution: 2dppx) and (min-width: 768px) {
+   .hero {
+     background-image: linear-gradient(to right,
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
+       url(../images/hero-bg-tablet-2x.jpg);
+   }
+ }
   .hero-tittle {
   font-weight: 900;
     font-size: 26px;
@@ -124,7 +143,7 @@
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../images/hero-bg-img.jpg);
+            url(../images/hero-bg-desctop.jpg);
         background-color: var(--hero-bg-color);
         background-repeat: no-repeat;
         background-size: cover;
@@ -134,41 +153,23 @@
         max-width: 1600px;
         height: 600px;
     }
+        @media screen and (min-device-pixel-ratio:2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+          .hero {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+              url(../images/hero-bg-desctop-2x.jpg);
+          }
+        }
     .hero-tittle {
       @include font (44px, 900, 60px);
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--text-hero);
-      margin-bottom: 30px;
-      margin-right: auto;
-      margin-left: auto;
       width: 696px;
       height: 120px;
     }
 
-    .hero-button {
-      font-family: inherit;
-      @include font (16px, 700, 30px);
-      display: flex;
-      align-items: center;
-      text-align: center;
-      letter-spacing: 0.06em;
-      background-color: var(--botton-action-text-color);
-      color: var(--botton-background);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-      border: none;
-      padding: 10px 32px;
-      min-width: 200px;
-      min-height: 50px;
-      margin: auto;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus {
-        background-color: #188ce8;
-      }
-    }
+    
 }
 
 // --------------------/DESCTOP-----------------------
