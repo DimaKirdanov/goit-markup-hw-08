@@ -12,21 +12,21 @@
 }
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 450px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 768px;
+    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
     .conteiner {
-        width: 1200px;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }

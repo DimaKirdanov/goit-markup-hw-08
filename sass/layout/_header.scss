@@ -7,10 +7,12 @@
     @include font(26px, 700, 31px);
     text-decoration: none;
     margin-right: 88px;
+    font-size:24px;
   }
 
   .header-logo-sub {
     color: #2196f3;
+    font-size: 24px;
   }
   .header-nav-list {
     display: none;
@@ -27,21 +29,27 @@
   justify-content: space-between;
 }
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 //------------------/MOBILE--------------------
 
 // ----------------------TABLET--------------------
 
 @media screen and (min-width: 768px) {
-  .header-logo {
+.header-logo {
     color: #000000;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     @include font(26px, 700, 31px);
     text-decoration: none;
     margin-right: 88px;
+    font-size: 24px;
+  }
+
+  .header-logo-sub {
+    color: #2196f3;
+    font-size: 24px;
   }
   .header {
     background-color: var(--background-header);
@@ -49,9 +57,7 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #eeeeee;
   }
-  .header-logo-sub {
-    color: #2196f3;
-  }
+
   .mobile-menu {
     display: none;
   }
@@ -70,7 +76,8 @@
     margin-right: 50px;
   }
   .contact-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     color: var(--text-color);
   }
@@ -142,31 +149,40 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 12px;
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 2;
     letter-spacing: 0.02em;
-    margin-bottom: 10px;
     color: var(--text-color);
     &:focus,
     &:hover {
       color: var(--botton-action-text-color);
     }
   }
-}
+ 
+
 // ----------------------/TABLET-----------------------
 
 // -----------------------DESCTOP----------------------
 
 @media screen and (min-width: 1200px) {
+  .header-logo {
+      font-size: 26px;
+    }
+  
+    .header-logo-sub {
+      font-size: 26px;
+    }
   .header {
+    
     padding-top: 24px;
     padding-bottom: 25px;
   }
-  .contact-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    color: var(--text-color);
-  }
+.contact-list {
+  display: flex;
+    flex-direction:row;
+  align-items: center;
+  margin-left: auto;
+  color: var(--text-color);
+}
   .contact-list__mail-link {
     margin-right: 50px;
   }
@@ -176,6 +192,7 @@
   }
   .contact-list__link-header {
     font-size: 14px;
+    margin: 0;
   }
 }
 // -----------------------/DESCTOP----------------------
