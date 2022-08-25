@@ -24,6 +24,8 @@
     border-radius: 4px;
     padding: 40px;
   }
+
+        
    
 
   .backdrop.is-hidden {
@@ -225,7 +227,8 @@
 
  @media screen and (max-width: 1200px){
   .modal {
-      width: 450px;
+    width: 95%;
+      max-width: 450px;
       height: 609px;
     }
      .modal-form-check-desc {
