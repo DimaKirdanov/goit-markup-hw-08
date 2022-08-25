@@ -1,70 +1,96 @@
-
+// --------------------------MOBILE-------------------
 @media screen and (max-width: 767px) {
+  .qualities {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .qualities__subtittle {
+    display: flex;
+    justify-content: center;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--tittle-text-color);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 
- .qualities__subtittle {
-         line-height: 1.14;
-         text-transform: uppercase;
-         color: var(--tittle-text-color);
-         font-size: 14px;
-         margin-bottom: 10px;
-     }
+  .qualities__text {
+    line-height: 1.71;
 
- .qualities__text {
-         line-height: 1.71;
+    color: var(--text-color);
+  }
 
-         color: var(--text-color);
-     }
-       
-         .qualities__img-bg {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: calc(100%-30px);
-             background-color: var(--background-team);
-             height: 120px;
-             border-radius: 4px;
-             margin-bottom: 30px;
-         }
-         .qualities__img{
-            justify-content: center;
-            align-items: center;
-         }
+  .qualities__img-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-team);
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .qualities__img {
+    justify-content: center;
+    align-items: center;
+  }
 }
+// --------------------------/MOBILE-------------------
 
-// .qualities .conteiner {
-//     gap: 30px;
-// }
+// // -------------------------TABLET------------------------
+@media screen and (min-width: 768px) {
+  .qualities {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .qualities .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-// .qualities__subtittle {
-//     line-height: 1.14;
-//     text-transform: uppercase;
-//     color: var(--tittle-text-color);
-//     font-size: 14px;
-//     margin-bottom: 10px;
-// }
+  .qualities__subtittle {
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--tittle-text-color);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 
-// .qualities__text {
-//     line-height: 1.71;
+  .qualities__text {
+    line-height: 1.71;
 
-//     color: var(--text-color);
-// }
+    color: var(--text-color);
+  }
 
+  .qualities-list {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .qualities__item {
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
+    width: 100%;
+  }
 
-// .qualities {
-//     display: flex;
-//     justify-content: space-between;
-// }
+  .qualities__img-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-team);
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+// // -------------------------/TABLET------------------------
 
-// .qualities__item {
-//     flex-basis: calc((100% - 90px) / 4);
-// }
-
-
-// .qualities__img-bg {
-//    @extend %justify;
-//     background-color: var(--background-team);
-//     height: 120px;
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-// }
+//   ---------------------------DESCTOP-----------------------
+@media screen and (min-width: 1200px) {
+  .qualities__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+//   ---------------------------/DESCTOP-----------------------
