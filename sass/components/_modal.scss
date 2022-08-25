@@ -163,6 +163,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
@@ -171,7 +172,7 @@
     &:before {
       content: "";
       display: block;
-      width: 16px;
+      min-width: 16px;
       height: 15px;
       border-radius: 2px;
       border: 1px solid #212121;
@@ -227,7 +228,7 @@
 
  @media screen and (max-width: 1200px){
   .modal {
-    width: 95%;
+   width: calc(100% - 30px);
       max-width: 450px;
       height: 609px;
     }
