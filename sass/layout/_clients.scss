@@ -1,25 +1,58 @@
-.regular-clients-tittle {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--heared-nav-link);
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .regular-clients-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    gap: 30px;
+    width: 100%;
+  }
+  .regular-clients-tittle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
+    margin-bottom: 30px;
+  }
+  .regular-clients-item {
+    width: 100%;
+    flex-basis: calc((100% - (2 - 1) * 30px) / 2);
+  }
+ 
+          
 }
 
-.regular-clients-list {
-  @extend %justify;
+@media screen and (min-width: 768px) {
+    .regular-clients-tittle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
+    margin-bottom: 30px;
+  }
+  .regular-clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    gap: 30px;
+  }
+    .regular-clients-item {
+      flex-basis: calc((100% - (3 - 1) * 30px) / 3);
+    }
+  }
+      
 
-  margin-left: auto;
-  gap: 30px;
-}
 
 .regular-clients-link {
- @extend %justify;
-  min-width: 170px;
+  @extend %justify;
   min-height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 100%;
 }
 
 .regular-clients-svg {
@@ -29,7 +62,7 @@
 
 .regular-clients-link {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   &:focus,
   &:hover {
     border-color: var(--botton-action-text-color);
@@ -39,4 +72,17 @@
 .regular-clients-link:hover .regular-clients-svg,
 .regular-clients-link:focus .regular-clients-svg {
   fill: var(--botton-action-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    gap: 30px;
+  }
+.regular-clients-item{
+flex-basis: calc((100% - (6 - 1) * var(--card-gap)) / 6);
+}
+    
 }
