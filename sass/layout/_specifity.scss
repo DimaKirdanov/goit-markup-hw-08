@@ -7,13 +7,20 @@
 @media screen and (min-width: 1200px) {
 
 .specifity {
-        @include font (36px, 700, 42px);
+       
         text-align: center;
         color: var(--tittle-text-color);
     }
 
     .section-tittle {
         margin-bottom: 50px;
+        font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.03em;
+        
+            color: #212121;
     }
 
     .what-we-do {
