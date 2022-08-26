@@ -81,8 +81,10 @@
     margin-left: auto;
     gap: 30px;
   }
-.regular-clients-item{
-flex-basis: calc((100% - (6 - 1) * var(--card-gap)) / 6);
+  
+.regular-clients-item {
+
+  flex-basis: calc((100% - (6 - 1) * 30px) / 6);
 }
     
 }
