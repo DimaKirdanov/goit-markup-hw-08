@@ -1259,7 +1259,7 @@ body {
     margin-left: 10px;
   }
   .footer-contact {
-    width: 450px;
+    width: 100%;
     margin-bottom: 60px;
   }
 }
