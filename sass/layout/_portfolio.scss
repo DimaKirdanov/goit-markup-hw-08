@@ -46,7 +46,8 @@
 
 .filter-list {
   display: flex;
-  min-width: 611px;
+  flex-wrap: wrap;
+  min-width: 100%;
   justify-content: center;
   margin-bottom: 50px;
 }

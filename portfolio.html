@@ -20,7 +20,7 @@
 
   <body>
     <!-- это шапка -->
-     <header class="header">
+    <header class="header">
       <div class="conteiner header-conteiner">
         <nav class="header-nav">
           <a href="./index.html" class="header-logo">
@@ -28,12 +28,14 @@
           >
           <ul class="header-nav-list list">
             <li class="header-nav-list__item">
-              <a class="header-nav-list__link link " href="./index.html"
+              <a
+                class="header-nav-list__link header-nav-list__link_current link"
+                href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="header-nav-list__item">
-              <a class="header-nav-list__link_current link " href="./portfolio.html"
+              <a class="header-nav-list__link link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -42,28 +44,75 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="24px" height="16px">
+            <use href="./images/SVG/symbol-defs.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+
         <ul class="contact-list list">
           <li class="contact-list__mail-link">
-         
-
             <a
               class="contact-list__link-header link contact-mail"
-              href="mailto:info@devstudio.com">
-                 <svg class="mail-svg">
-              <use href="./images/SVG/symbol-defs.svg#envelope"></use>
-            </svg>info@devstudio.com</a
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="mail-svg" width="16" height="12">
+                <use href="./images/SVG/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="contact-list__tell-link">
-            
-            <a class="contact-list__link-header link" href="tel:+380961111111"
-              >
-              <svg class="tell-svg">
-              <use href="./images/SVG/symbol-defs.svg#smartphone"></use>
-            </svg>+38 096 111 11 11</a
+            <a class="contact-list__link-header link" href="tel:+380961111111">
+              <svg class="tell-svg" width="10" height="16">
+                <use href="./images/SVG/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="conteiner mobile-menu__conteiner">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/SVG/symbol-defs.svg#close-modal"></use>
+            </svg>
+          </button>
+          <ul class="mob-list-menu list">
+            <li class="mob-list-menu__item">
+              <a class="mob-list-menu__link link" href="">Студия</a>
+            </li>
+            <li class="mob-list-menu__item">
+              <a class="mob-list-menu__link link" class="" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-list-menu__item">
+              <a class="mob-list-menu__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mob-contact">
+            <li class="mob-contact__item list">
+              <a class="mob-contact__link-tel link" href="tel:+380961111111 ">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-contact__item list">
+              <a class="mob-contact__link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-social list" >
+            <li class="mob-social__item">
+              <a class="mob-social__link link" href="">Instagram</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link link" href="">Twitter</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link link" href="">Facebook</a>
+            </li>
+            <li class="mob-social__item">
+              <a class="mob-social__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
