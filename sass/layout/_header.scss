@@ -101,23 +101,7 @@
   .header-nav-list__link:hover .mail-svg {
     fill: #2196f3;
   }
-  .header-nav-list__link_current {
-    color: var(--botton-action-text-color);
-    position: relative;
-    padding-bottom: 32px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      display: block;
-      width: 100%;
-      height: 4px;
-      background: var(--botton-action-text-color);
-      border-radius: 2px;
-    }
-  }
+ 
   .qualities-subtittle {
     color: var(--tittle-text-color);
   }
@@ -196,3 +180,20 @@
   }
 }
 // -----------------------/DESCTOP----------------------
+ .header-nav-list__link_current {
+   color: var(--botton-action-text-color);
+   position: relative;
+   padding-bottom: 32px;
+
+   &::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     display: block;
+     width: 100%;
+     height: 4px;
+     background: var(--botton-action-text-color);
+     border-radius: 2px;
+   }
+ }
