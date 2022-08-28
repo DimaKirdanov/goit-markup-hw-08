@@ -185,9 +185,10 @@
   /* /portfolio */
 
   .tittle-portfolio {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
     letter-spacing: 0.06em;
+    max-width: 300px;
     color: var(--tittle-text-color);
   }
 
