@@ -16,8 +16,6 @@
     }
   }
 
-  /* /portfolio */
-
   .tittle-portfolio {
     font-size: 18px;
     line-height: 2;
@@ -46,15 +44,6 @@
     padding-right: 24px;
   }
 
-  .filter-list {
-    display: flex;
-    flex-wrap: wrap;
-
-    min-width: 100%;
-    justify-content: start;
-    margin-bottom: 50px;
-    row-gap: 15px;
-  }
 
   .filter-list-item + .filter-list-item {
     margin-left: 8px;
@@ -147,7 +136,13 @@
     transform: translate(0, 0);
   }
 }
-
+    .portfolio-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      
+    }
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -164,7 +159,6 @@
   }
 }
 
-/* /portfolio */
 
 .tittle-portfolio {
   font-size: 18px;
@@ -179,12 +173,7 @@
   color: var(--text-color);
 }
 
-.portfolio-list {
-  flex-basis: calc((100% - 60px) / 3);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
+
 
 .card-info {
   border: 1px solid #eeeeee;
@@ -197,7 +186,6 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-
   min-width: 100%;
   justify-content: start;
   margin-bottom: 50px;
@@ -294,6 +282,12 @@
 
 // --------------------------TABLET---------------------------------------
 @media screen and (min-width: 768) {
+  .portfolio-list {
+      flex-basis: calc((100% - 30px) / 2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   .button {
     font-weight: 500;
     font-size: 16px;
@@ -311,10 +305,8 @@
     }
   }
 
-  /* /portfolio */
-
   .tittle-portfolio {
-    font-size: 18px;
+    font-size: 38px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--tittle-text-color);
@@ -326,12 +318,7 @@
     color: var(--text-color);
   }
 
-  .portfolio-list {
-    flex-basis: calc((100% - 30px) / 2);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+
 
   .card-info {
     border: 1px solid #eeeeee;
@@ -461,7 +448,6 @@
     }
   }
 
-  /* /portfolio */
 
   .tittle-portfolio {
     font-size: 18px;
@@ -472,7 +458,7 @@
   }
 
   .text-portfolio {
-    font-size: 16px;
+    font-size: 36px;
     line-height: 1.88;
     color: var(--text-color);
   }
@@ -480,10 +466,9 @@
   .portfolio-list {
     display: flex;
     flex-basis: calc((100% - 60px) / 3);
-
-    flex-wrap: wrap;
     gap: 30px;
     min-width: 320px;
+   
   }
 
   .card-info {
