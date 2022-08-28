@@ -1468,7 +1468,6 @@ body {
     background-color: #2196f3;
     color: #ffffff;
   }
-  /* /portfolio */
   .tittle-portfolio {
     font-size: 18px;
     line-height: 2;
@@ -1504,7 +1503,7 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.03em;
     color: var(--tittle-text-color);
-    padding: 8px 22px;
+    padding: 6px 22px;
     min-width: 73px;
     min-height: 38px;
     background: #f5f4fa;
