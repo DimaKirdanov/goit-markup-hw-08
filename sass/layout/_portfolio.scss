@@ -149,19 +149,7 @@
       transform: translate(0, 0);
     }
   
-    @media screen and (min-width: 1200px) {
-      .portfolio-list {
-        flex-basis: calc((100% - 60px) / 3);
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
   
-      }
-  
-      .portfolio-list-item {
-        min-width: 370px;
-      }
-    }
     
 }
 @media screen and (min-width: 768px){
@@ -325,5 +313,6 @@
       min-width: 370px;
     }
   }
+     
 }
 

@@ -384,7 +384,7 @@ body {
   }
 }
 .mob-contact {
-  margin-top: 200px;
+  margin-top: 290px;
 }
 
 .mob-list-menu {
@@ -416,7 +416,7 @@ body {
 
 .mob-contact__link-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--botton-action-text-color);
@@ -450,6 +450,7 @@ body {
 
 .mob-social__item:not(:last-child) {
   padding-right: 20px;
+  margin-bottom: 15px;
 }
 
 .mob-social__item:not(:last-child)::after {
@@ -461,6 +462,10 @@ body {
   height: 100%;
   width: 1px;
   background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mob-list-menu-link-current {
+  color: var(--botton-action-text-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -1120,6 +1125,7 @@ body {
   .footer-social {
     display: block;
     width: 100%;
+    margin-bottom: 60px;
   }
   .address-footer {
     text-align: center;
@@ -1165,9 +1171,6 @@ body {
   .link-footer:hover, .link-footer:focus {
     color: var(--botton-action-text-color);
   }
-  .footer-main-list {
-    display: flex;
-  }
   .footer-tittle {
     text-transform: uppercase;
     font-size: 14px;
@@ -1206,7 +1209,6 @@ body {
     text-transform: uppercase;
     color: var(--background-header);
     margin-bottom: 20px;
-    margin-top: 60px;
     text-align: center;
   }
   .modal-form-footer-input {
@@ -1565,17 +1567,6 @@ body {
   .link-portfolio:hover .overlay,
 .link-portfolio:focus .overlay {
     transform: translate(0, 0);
-  }
-}
-@media screen and (max-width: 767px) and (min-width: 1200px) {
-  .portfolio-list {
-    flex-basis: calc((100% - 60px) / 3);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  .portfolio-list-item {
-    min-width: 370px;
   }
 }
 @media screen and (min-width: 768px) {

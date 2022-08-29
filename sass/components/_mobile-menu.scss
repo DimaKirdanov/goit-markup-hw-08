@@ -62,7 +62,7 @@
   }
 }
 .mob-contact {
-  margin-top: 200px;
+  margin-top: 290px;
 }
 .mob-list-menu {
   padding-top: 0px;
@@ -91,7 +91,7 @@
 }
 .mob-contact__link-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--botton-action-text-color);
@@ -121,6 +121,7 @@
 }
 .mob-social__item:not(:last-child){
     padding-right: 20px;
+        margin-bottom: 15px;
 }
 .mob-social__item:not(:last-child)::after {
   content: '';
@@ -131,4 +132,8 @@
   height: 100%;
   width: 1px;
   background-color: rgba(33, 33, 33, 0.2);
+}
+.mob-list-menu-link-current {
+
+  color: var(--botton-action-text-color);
 }

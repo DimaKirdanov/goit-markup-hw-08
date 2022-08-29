@@ -11,7 +11,7 @@
 .footer-social{
   display: block;
   width: 100%;
- 
+  margin-bottom: 60px;
 }
   .address-footer {
     text-align: center;
@@ -66,9 +66,7 @@
     }
   }
 
-  .footer-main-list {
-    display: flex;
-  }
+ 
 
   .footer-tittle {
     text-transform: uppercase;
@@ -114,7 +112,7 @@
     text-transform: uppercase;
     color: var(--background-header);
     margin-bottom: 20px;
-        margin-top: 60px;
+       
     text-align: center;
   }
 
